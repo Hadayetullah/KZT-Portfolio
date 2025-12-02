@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/idangerous.swiper.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+
+    <!-- Link to the file hosted on your server, -->
+  
+    <link rel="stylesheet" href="{% static 'css/splide.min.css' %}" />
+
+    <link href="{% static 'css/custom.css' %}?v={{version}}" rel="stylesheet" />
+
+    {% comment %}
+    <link rel="shortcut icon" href="img/main/favicon.ico" />
+    {% endcomment %}
+
+    <title>{% block title_block %} {% endblock %}</title>
+  </head>
+  <body data-theme="theme-1" class="without-border-default">
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+      <!-- <img src="{% static 'img/main/loader.GIF' %}" alt=""/> -->
+
+      <svg
+        width="500"
+        height="500"
+        viewBox="0 0 500 500"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="logo-group">
+          <g id="l-layer">
+            <path
+              id="Vector"
+              d="M197.5 160H222.75C227 160 230.45 163.45 230.45 167.7V333.15C230.45 337.4 227 340.85 222.75 340.85H197.45C193.2 340.85 189.75 337.4 189.75 333.15V167.75C189.75 163.5 193.2 160 197.5 160Z"
+            />
+          </g>
+          <g id="t-layer">
+            <path
+              id="Vector_2"
+              d="M283.45 174L312.95 186.2C316.8 187.8 317.35 193 313.95 195.35L267.9 227.4C265.55 229.05 264.95 232.3 266.6 234.7L321.9 314.65C323.5 317 323 320.2 320.7 321.85L296.3 339.7C293.9 341.45 290.55 340.9 288.9 338.45L233.8 258.8C232.15 256.4 228.85 255.8 226.5 257.5L186.25 285.6C182.75 288.05 178 285.55 178 281.3L178.05 247.25C178.05 245.55 178.9 243.95 180.3 242.95L278.45 174.55C279.95 173.5 281.8 173.3 283.45 174Z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- LOADER -->
+    <div id="content-wrapper">
+      <div class="blocks-container style-2">
+        {% include "header.html" %} 
+        {% include "app_service/service_modal.html" %} 
+        {% block body_block %} {% endblock %}
+
+        <!-- FORM MODAL START -->
+        <div id="contact-modal" class="contact__modal__success__main">
+          <div id="form-loader-wrapper">
+            <!-- <img src="{% static 'img/main/loader.GIF' %}" alt=""> -->
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 500 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="logo-group">
+                <g id="l-layer">
+                  <path
+                    id="Vector"
+                    d="M197.5 160H222.75C227 160 230.45 163.45 230.45 167.7V333.15C230.45 337.4 227 340.85 222.75 340.85H197.45C193.2 340.85 189.75 337.4 189.75 333.15V167.75C189.75 163.5 193.2 160 197.5 160Z"
+                  />
+                </g>
+                <g id="t-layer">
+                  <path
+                    id="Vector_2"
+                    d="M283.45 174L312.95 186.2C316.8 187.8 317.35 193 313.95 195.35L267.9 227.4C265.55 229.05 264.95 232.3 266.6 234.7L321.9 314.65C323.5 317 323 320.2 320.7 321.85L296.3 339.7C293.9 341.45 290.55 340.9 288.9 338.45L233.8 258.8C232.15 256.4 228.85 255.8 226.5 257.5L186.25 285.6C182.75 288.05 178 285.55 178 281.3L178.05 247.25C178.05 245.55 178.9 243.95 180.3 242.95L278.45 174.55C279.95 173.5 281.8 173.3 283.45 174Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="contact__modal__success">
+            <div class="contact__modal__success-cross">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="xmark"
+                class="svg-inline--fa fa-xmark"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                ></path>
+              </svg>
+            </div>
+            <span></span><button class="contact__modal__success-ok">OK</button>
+          </div>
+        </div>
+        <!-- FORM MODAL END -->
+
+      </div>
+    </div>
+
+    <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+    <script src="{% static 'js/global.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/progressbar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <!-- <script src="{% static 'js/splide-extension-grid.min.js' %}"></script> -->
+
+    <!-- <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script> -->
+
+
+        
+
+    <script src="{% static 'js/custom.js' %}?v={{version}}"></script>
+  </body>
+</html>

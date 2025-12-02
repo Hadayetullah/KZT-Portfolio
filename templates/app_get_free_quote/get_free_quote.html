@@ -1,0 +1,185 @@
+{% extends "base.html" %} {% load static %} {% block title_block %} Get a Free
+Quote | KaizenTech {% endblock %} {% block body_block %}
+
+<div id="get__free__quote" class="custom__page">
+  <div class="get__free__quote1__main">
+    <div class="get__free__quote1">
+      <p>Get a Free Quote</p>
+      <h2>Schedule Your Free Consultation</h2>
+      <p>
+        Our team of expert marketers is here to help you do just that. We
+        specialize in creating tailor-made marketing solutions that unlock your
+        business's full potential.
+      </p>
+    </div>
+  </div>
+
+  <div class="get__free__quote2__main">
+    <div class="get__free__quote2">
+      <form id="contact-form-quote" data-csrf-token-quote="{{ csrf_token }}">
+        <!-- {% csrf_token %} -->
+        <div class="get__free__quote2__double__element">
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="text" name="company" placeholder="Company Name" />
+        </div>
+        <div class="get__free__quote2__double__element">
+          <input type="email" name="email" placeholder="Email Address" />
+          <!-- <input type="text" name='service' placeholder='Your Required Service' /> -->
+          <select name="services" required>
+            <option
+              value=""
+              class="add__customer__select__option"
+              disabled
+              selected
+            >
+              Your Required Service
+            </option>
+            <option
+              value="Search Engine Optimization (SEO)"
+              class="add__customer__select__option"
+            >
+              Search Engine Optimization (SEO)
+            </option>
+            <option
+              value="Content Marketing"
+              class="add__customer__select__option"
+            >
+              Content Marketing
+            </option>
+            <option
+              value="Web Development"
+              class="add__customer__select__option"
+            >
+              Web Development
+            </option>
+            <option value="Branding" class="add__customer__select__option">
+              Branding
+            </option>
+            <option
+              value="Social Media Marketing"
+              class="add__customer__select__option"
+            >
+              Social Media Marketing
+            </option>
+            <option
+              value="Graphic Design"
+              class="add__customer__select__option"
+            >
+              Graphic Design
+            </option>
+            <option
+              value="Motion Design & Animation"
+              class="add__customer__select__option"
+            >
+              Motion Design & Animation
+            </option>
+            <option
+              value="Video Editing and Production"
+              class="add__customer__select__option"
+            >
+              Video Editing and Production
+            </option>
+          </select>
+        </div>
+        <div class="get__free__quote2__single__element">
+          <input type="text" name="budget" placeholder="Your Budget" />
+        </div>
+        <div class="get__free__quote2__single__element">
+          <textarea
+            name="message"
+            placeholder="Small Brief of Your Project"
+          ></textarea>
+        </div>
+
+        <div class="get__free__quote2__single__element">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="get__free__quote__pricing__guide__main">
+    <div class="get__free__quote__pricing__guide">
+      <h2>Pricing Guide</h2>
+      <img
+        src="{% static 'img/custom/icon/user-guide-N.svg' %}"
+        alt=""
+      />
+      <p>
+        Find our pricing guide here. We can also customize your project
+        according to your plan, needs & budget.
+      </p>
+      <a
+        download=""
+        target="_blank"
+        href="{% static 'pdf/Hadayetullah-CV.pdf' %}"
+        >Download Now</a
+      >
+    </div>
+  </div>
+
+  <div class="get__free__quote__frequently__questions__main">
+    <div class="get__free__quote__frequently__questions">
+      <h2>Frequently Asked Questions</h2>
+      <div class="get__free__quote__frequently__questions__contents">
+        <div class="get__free__quote__individual__questions__left">
+          <div class="qs__content">
+            <a id="qs__content">What if I want to make a change?</a>
+            <span>
+              We understand that your needs may change over time. That’s why we
+              offer flexible solutions that can be customized to meet your
+              evolving business requirements. If you need to make a change,
+              simply contact us and we’ll work with you to find the best
+              solution.
+            </span>
+          </div>
+
+          <div class="qs__content">
+            <a id="qs__content">What if I don’t like the agency created?</a>
+            <span>
+              We strive to provide our clients with the highest quality services
+              and solutions. If you’re not satisfied with the work we’ve done,
+              please let us know and we’ll do everything we can to make it
+              right.
+            </span>
+          </div>
+
+          <div class="qs__content">
+            <a id="qs__content">What if I need a Single service?</a>
+            <span>
+              We offer a range of services that can be tailored to meet your
+              specific needs. Whether you need a single service or a
+              comprehensive solution, we’re here to help.
+            </span>
+          </div>
+        </div>
+
+        <div class="get__free__quote__individual__questions__right">
+          <div class="qs__content">
+            <a id="qs__content">Do I need to pay the full amount upfront?</a>
+            <span>
+              We understand that every business has unique financial needs.
+              That’s why we offer flexible payment options that can be
+              customized to meet your budget requirements. Please contact us to
+              discuss your specific needs.
+            </span>
+          </div>
+
+          <div class="qs__content">
+            <a id="qs__content">Do You offer any guarantees?</a>
+            <span>
+              We stand behind the quality of our work and are committed to
+              providing our clients with the best possible service. If you’re
+              not satisfied with our work, please let us know and we’ll do
+              everything we can to make it right.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <span class="offset-160 md-offset-80"></span> -->
+
+{% include "footer.html" %} {% endblock %}

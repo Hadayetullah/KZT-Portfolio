@@ -1,0 +1,405 @@
+
+{% load static %}
+<div id="serviceModal" class="service__modal service__modal__hidden">
+    <div class="service__modal__content">
+      <div class="service__modal__content__left">
+        <div class="service__modal__content__left__title service__modal__title__active">
+          <div class="service__modal__content__left__stroke"></div>
+          {% comment %} <a href="#" onclick="affiliateServices(this)" onmouseover="affiliateServices(this)" onmouseout="affiliateServices(this)"><p>SEO Services</p></a> {% endcomment %}
+          <a href="#" id="defaultActiveElement" onclick="seoServices(this)" onmouseover="modalContentDisplayStroke(this)" onmouseout="modalContentRemoveStroke(this)"><p>SEO Services</p></a>
+        </div>
+
+        <div class="service__modal__content__left__title">
+          <div class="service__modal__content__left__stroke"></div>
+          <a href="#" onclick="contentServices(this)" onmouseover="modalContentDisplayStroke(this)" onmouseout="modalContentRemoveStroke(this)"><p>Content Services</p></a>
+        </div>
+
+        <div class="service__modal__content__left__title">
+          <div class="service__modal__content__left__stroke"></div>
+          <a href="#" onclick="marketingServices(this)" onmouseover="modalContentDisplayStroke(this)" onmouseout="modalContentRemoveStroke(this)"><p>Marketing Services</p></a>
+        </div>
+
+        <div class="service__modal__content__left__title">
+          <div class="service__modal__content__left__stroke"></div>
+          <a href="#" onclick="itServices(this)" onmouseover="modalContentDisplayStroke(this)" onmouseout="modalContentRemoveStroke(this)"><p>IT Services</p></a>
+        </div>
+      </div>
+      
+      <div class="service__modal__content__right">
+        <div class="seo service__modal__content__individual service__modal__active">
+          <div class="service__modal__content__right__top">
+            <a href="/services/page-speed-optimization/" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+                <h2>Page Speed Optimization</h2>
+                <p>
+                  Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+                </p>
+                <span>
+                  Learn More
+                  <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+                </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-software.png' %}" alt="" />
+              </div>
+              
+              <div class="service__modal__content__right__brief__right">
+              <h2>Enterprise SEO Services</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-manager.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Best E-commerce SEO Agency & Service </h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-recruitment.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Local SEO Services</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-recruitment.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Conversion Rate Optimization</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="service__modal__content__right__bottom service__modal__content__right__bottom__animation">
+            <a>Or, Talk with one of our Expert Heads over a 45 minutes “One-to-one” strategy session for Fully free for you only.</a>
+          </div>
+        </div>
+
+        <div class="content service__modal__content__individual">
+          <div class="service__modal__content__right__top">
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/deep-seo.svg' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>SEO Content Marketing Services</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/professional-seo.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Visual content / Video editing</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/authority-backlinks.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Infographics & Motion Graphics</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/ecommerce-seo.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>eCommerce SEO</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/authority-backlinks.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Graphics Desgin Management Services</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/seo/ecommerce-seo.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Reputation Management Services</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="service__modal__content__right__bottom">
+            <a>Or, Talk with one of our Expert Heads over a 45 minutes “One-to-one” strategy session for Fully free for you only.</a>
+          </div>
+        </div>
+
+        <div class="marketing service__modal__content__individual">
+          <div class="service__modal__content__right__top">
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Full Stack Digital Marketing </h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Social Media Advertising</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Enterprise Social Media Advertising</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Social Media Management</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>All Paid Advertising</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="service__modal__content__right__bottom">
+            <a>Or, Talk with one of our Expert Heads over a 45 minutes “One-to-one” strategy session for Fully free for you only.</a>
+          </div>
+        </div>
+
+        <div class="it service__modal__content__individual">
+          <div class="service__modal__content__right__top">
+            <a href="/services/web-development/" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Website Development</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Website Optimization</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Landing Page Development</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+  
+            <a href="#" class="service__modal__content__right__brief">
+              <div class="service__modal__content__right__brief__left">
+                <img src="{% static 'img/icon/affiliate/affiliate-campaign.png' %}" alt="" />
+              </div>
+
+              <div class="service__modal__content__right__brief__right">
+              <h2>Website Templates</h2>
+              <p>
+                Affiliate Software Setup, Affiliate Recruitment, Affiliate Management, Affiliate Payroll & Brand Management, and more.
+              </p>
+              <span>
+                Learn More
+                <img src="{% static 'img/icon/arrow-forward.png' %}" alt="" class="service__modal__forward__arrow" />
+              </span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="service__modal__content__right__bottom">
+            <a>Or, Talk with one of our Expert Heads over a 45 minutes “One-to-one” strategy session for Fully free for you only.</a>
+          </div>
+        </div>
+      </div>
+      <!-- <span class="close">&times;</span>
+      <h2>Modal Title</h2>
+      <p>This is the modal content.</p> -->
+    </div>
+</div>

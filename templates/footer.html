@@ -1,0 +1,106 @@
+
+{% load static %}
+<!-- FOOTER STYLE 1-->
+<footer class="small-13">
+    <div class="container">
+        <div class="row">
+            <div class="offset-85 md-offset-40"></div>
+            <div class="col-md-3 col-xs-12">
+                <a href="#" class="footer-logo">
+                    <!-- <img src="{% static 'img/main/logo-white.png' %}"  alt=""/> -->
+                    <img src="{% static 'img/custom/logo/footer-logo.png' %}"  alt=""/>
+                </a>
+                <article class="grei-6e6e6e">
+                    <p>
+                        We take pride in our T-shaped marketing solutions that cater to every aspect of your digital marketing needs.
+                    </p>
+                </article>
+            </div>
+            <div class="md-offset-30 sm-offset-30"></div>
+            <div class="col-md-3 col-xs-12 contact">
+                <h6 class="h6 white">CONTACT</h6>
+                <div class="offset-20"></div>
+                <address>
+                    <a 
+                        href="https://www.google.com/maps/place/KaizenTech/@23.7742832,90.3507666,15.98z/data=!4m19!1m12!4m11!1m3!2m2!1d90.3550592!2d23.7714388!1m6!1m2!1s0x3755c1ce8b240ae9:0xe875f783d66232ca!2sKaizenTech+Flat:8B,House:560,Road+no:08+Adabor+Main+Rd+Dhaka+1207!2m2!1d90.3550524!2d23.7714215!3m5!1s0x3755c1ce8b240ae9:0xe875f783d66232ca!8m2!3d23.7714215!4d90.3550524!16s%2Fg%2F11tmwd6vt4?entry=ttu" 
+                        target="_blank">
+                        <div>
+                            Flat:8B, House:560, Road no:08, Adabor Main Rd, Dhaka 1207
+                        </div>
+                    </a>
+                    <a target="_blank" href="mailto:admin@kaizentech.com.bd">E-Mail: admin@kaizentech.com.bd</a>
+                    <a>Phone: +880 1875 533203</a>
+                </address>
+            </div>
+            <div class="md-offset-30 sm-offset-30"></div>
+            <div class="col-md-3 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-6 footer-menu">
+                    <h6 class="h6 white">MENU</h6>
+                    <div class="offset-20"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about/">About Us</a></li>
+                            <li><a href="/portfolio/">Portfolio</a></li>
+                            <li><a href="/services/">Services</a></li>
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 footer-link">
+                    <h6 class="h6 white">MENU</h6>
+                    <div class="offset-20"></div>
+                    <div class="cities">
+                        <a href="/contact/">Contact</a>
+                        <a>Blog</a>
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        <a href="/terms-condition/">Terms & Condition</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md-offset-30 sm-offset-30"></div>
+            <div class="col-md-3 col-xs-12 subscribe">
+                <h6 class="h6 white">NEWSLETTERS SUBSCRIBE</h6>
+                <div class="offset-20"></div>
+                <form id="newsletter-form" data-csrf-token-newsletter="{{ csrf_token }}" class="grei-6e6e6e">
+                    You can subscribe here to get our  news
+                    <div class="offset-15"></div>
+                    <div class="submit-wrap">
+                        <input type="text" name="email" placeholder="Your E-mail" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa fa-envelope-o"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="offset-50 md-offset-30 sm-offset-20"></div>
+                <div class="copywrite">
+                    © 2024 KaizenTech. All Rights reserved.
+                </div>
+                <!-- <div class="copywrite">
+                © 2024 KaizenTech. All Rights reserved. Development by <a href="#" class="trademark yellow">UnionAgency</a></div> -->
+                <div class="sm-offset-20"></div>
+                <div class="follow">
+                    <a target="_blank" href="https://www.facebook.com/kaizentechglobal">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <!-- <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a> -->
+                    <a target="_blank" href="https://twitter.com/KaizenTechIT">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/kaizen-tech-global/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://www.pinterest.com/KaizenTechIT/">
+                        <i class="fa fa-pinterest-p"></i>
+                    </a>
+                </div>
+                <div class="offset-60 md-offset-30"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER STYLE 1-->
